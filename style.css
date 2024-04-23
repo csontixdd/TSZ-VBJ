@@ -1,0 +1,46 @@
+:root{
+    --default: #b5b5b5;
+    --miss: #FECE01;
+    --right: #74B72E;
+}
+h1{
+    text-align: center;
+}
+#game{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    border: 10rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(6, auto);
+
+}
+.box{
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--default);
+    font-style: Arial;
+    margin: 4px;
+    text-transform: uppercase;
+}
+.box.empty{
+    background: var(--default);
+}
+.box.miss{
+    background: var(--miss);
+}
+.box.right{
+    background: var(--right);
+}
+button{
+    text-align: center;
+}
