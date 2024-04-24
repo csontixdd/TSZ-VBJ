@@ -3,9 +3,33 @@
     --miss: #FECE01;
     --right: #74B72E;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+}
 
 h1 {
     text-align: center;
+    background: linear-gradient(90deg, #ff0000,#ffff00, #ff00f3,#0033ff,#ff00c4,#ff0000);
+    background-size: 400%;
+    font-size: 60px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    text-transform: uppercase;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
 }
 
 #game {
