@@ -13,9 +13,9 @@
     <h1>Wordle</h1>
     <div id="game">
         <div class="grid">
-            <div class="box empty"></div>
-            <div class="box miss"></div>
-            <div class="box right"></div>
+            <div class="box empty"><input type="text" id="box1" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box miss"><input type="text" id="box2" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box right"><input type="text" id="box3" maxlength="1"></div>
         </div>
     </div>
     <button id="Ellenorzes">Ellenőrzés</button>
