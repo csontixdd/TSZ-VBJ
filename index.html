@@ -13,9 +13,36 @@
     <h1>Wordle</h1>
     <div id="game">
         <div class="grid">
+            <!--Ha át akarjuk majd szinezni a boxot akkor az adott "box empty" nél kell átirni az empty-t
+            Ha jó akkor "right" ha rossz helyen van akkor "miss"-->
             <div class="box empty"><input type="text" id="box1" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
-            <div class="box miss"><input type="text" id="box2" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
-            <div class="box right"><input type="text" id="box3" maxlength="1"></div>
+            <div class="box empty"><input type="text" id="box2" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box3" maxlength="1"></div>
+        </div>
+        <div class="grid">
+            <div class="box empty"><input type="text" id="box4" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box empty"><input type="text" id="box5" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box6" maxlength="1"></div>
+        </div>
+        <div class="grid">
+            <div class="box empty"><input type="text" id="box7" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box empty"><input type="text" id="box8" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box9" maxlength="1"></div>
+        </div>
+        <div class="grid">
+            <div class="box empty"><input type="text" id="box10" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box empty"><input type="text" id="box11" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box12" maxlength="1"></div>
+        </div>
+        <div class="grid">
+            <div class="box empty"><input type="text" id="box13" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box empty"><input type="text" id="box14" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box15" maxlength="1"></div>
+        </div>
+        <div class="grid">
+            <div class="box empty"><input type="text" id="box16" maxlength="1" onkeyup="moveToNext(this, 'box2')"></div>
+            <div class="box empty"><input type="text" id="box17" maxlength="1" onkeyup="moveToNext(this, 'box3')"></div>
+            <div class="box empty"><input type="text" id="box18" maxlength="1"></div>
         </div>
     </div>
     <button id="Ellenorzes">Ellenőrzés</button>
