@@ -1,46 +1,60 @@
-:root{
+:root {
     --default: #b5b5b5;
     --miss: #FECE01;
     --right: #74B72E;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-#game{
+
+#game {
     display: grid;
     width: 100%;
-    height: 700px;
+    height: auto;
     place-items: center;
     align-items: center;
     text-align: center;
-    border: 10rem;
+    padding: 20px;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(6, auto);
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Növeltük a kockák szélességét */
+    grid-template-rows: repeat(6, 80px); /* Növeltük a kockák magasságát */
+    grid-gap: 20px; /* Növeltük a kockák közötti távolságot */
 }
-.box{
+
+.box {
     display: grid;
     place-items: center;
     font-size: 2.4rem;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     border: 2px solid var(--default);
-    font-style: Arial;
-    margin: 4px;
+    font-family: Arial;
     text-transform: uppercase;
-}
-.box.empty{
     background: var(--default);
+    margin: auto; /* Középre igazítás */
 }
-.box.miss{
+
+.box input {
+    width: 90%; /* Kis méretű padding a kocka belsejében */
+    height: 90%; /* Kis méretű padding a kocka belsejében */
+    border: none;
+    background: none;
+    font-size: inherit;
+}
+
+.box.miss {
     background: var(--miss);
 }
-.box.right{
+
+.box.right {
     background: var(--right);
 }
-button{
-    text-align: center;
+
+button {
+    display: block;
+    margin: 10px auto;
 }
