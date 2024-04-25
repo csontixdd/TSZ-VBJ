@@ -93,6 +93,10 @@ h1 {
   .second-row {
     margin: 0.5rem 0;
   }
+  .fourth-row{
+    margin: 0.5rem 0;
+
+  }
   
   .keyboard-button {
     font-size: 1rem;
@@ -108,6 +112,7 @@ h1 {
    bottom: 1rem;
    left: 50%;
    text-align: center;
+   justify-content:space-around
 }
 .btn{
     background: none;
@@ -116,10 +121,12 @@ h1 {
     text-transform: uppercase;
     padding: 12px 20px;
     min-width: 200px;
-    margin: 10px;
+    margin: 0 80px;
     cursor: pointer;
     transition: color 0.4s linear;
     position: relative;
+    max-width: 300px;
+
 }
 .btn:hover{
     color: #fff;
